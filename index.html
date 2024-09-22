@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pagina personal</title>
+    <title>Perfil Personal</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imaen.png">
 </head>
@@ -13,16 +13,16 @@
         <div class="header-container">
             <img src="imaen.png" alt="Foto de perfil" class="profile-img">
             <h1>Roberto Yahir Martinez Pedraza</h1>
-            <p>ESCOM || Estudiante en Sistemas Computacionales </p>
+            <p>ESCOM || Estudiante en Sistemas Computacionales</p>
         </div>
     </header>
 
     <section class="about" style="text-align: center;">
-        <h2>Pagina web</h2>
-        <p>Se realizo pagina web para la materia Criptografia || ESCOM 2024</p>
-        <p>Adjunto mi CV</p>
-        <boton onclick="abircv()" class="boton">Abrir CV</boton>
+        <h2>Formación académica</h2>
+        <p>Actualmente curso el séptimo semestre de ingeniería en Sistemas Computacionales en la Escuela Superior de Computación (ESCOM), además soy Técnico en Computación obtenido en el Centro de Estudios Científicos y Tecnológicos "CECyT 8".</p>
+        <button onclick="abircv()" class="boton">Abrir CV</button>
     </section>
+
 
     <section class="mapa" style="text-align: center;">
         <h2>Mapa curricular</h2>
@@ -30,9 +30,33 @@
         <button onclick="abrirpdf()" class="boton">Abrir Mapa</button>
     </section>
 
+    <section class="mapa" style="text-align: center;">
+        <h2>Hobbies</h2>
+        <p>Algunos de mis hobbies favoritos es ver peliculas o series, jugar videojuegos y jugar basketball</p>
+        <div class="hobbies-images" style="display: flex; justify-content: center; gap: 20px;">
+            <img src="G1.gif" alt="Ver películas o series" width="150" height="150">
+            <img src="G2.gif" alt="Jugar videojuegos" width="150" height="150">
+            <img src="G3.gif" alt="Jugar basketball" width="150" height="150">
+        </div>
+    </section>
+    <section class="mapa" style="text-align: center;">
+        <h2>Criptografía</h2>
+        <p>Historia del algoritmo de RSA (Rivest-Shamir-Adleman)</p>
+        <p>Este algorimto es uno de los primeros sistemas de criptografía de clave pública y es muy utilizado para la seguridad de los datos, fue escrito por Ron Rivest(Profesor asistente  de Ciencias de la Computación), Adi Shamir(Estudiante de Ciencias de la Computación) y Leonard Adleman(Profesor asistente de Matemáticas   ) en el MIT, en 1977. El RSA se basa en la dificultad computacional de factorizar grande números primos, este utiliza una clave pública para cifrar y una clave privada para descifrar. El RSA ha sido fundamental en el desarrollo del comercio electrónico y la seguridad en Internet.</p>
+        <img src="ima.png" alt="ima" width="250" height="150">
+        <img src="rsa.jpg" alt="rsa" width="250" height="150">
+    </section>
     <section class="contact" style="text-align: center;">
         <h2>Contacto</h2>
         <p>Email: <a href="mailto: yahirpedraza-26@hotmail.com">yahirpedraza-26@hotmail.com</a></p>
+        <button onclick="face()" class="boton">
+            <img src="face.png" alt="Facebook" width="24" height="24">
+        </button>
+    </section>
+    <section class="mapa" style="text-align: center;">
+        <h2>Llave Pública</h2>
+        <a href="#" onclick="return false">MI LLAVE PUBLICA</a>
+
     </section>
 
     <footer>
@@ -41,34 +65,14 @@
 
     <script>
         function abrirpdf(){
-            window.open('mapa.pdf','_blank');
+            window.open('mapa.pdf', '_blank');
         }
         function abircv(){
-            window.open('cv.pdf','_blank');
+            window.open('cv.pdf', '_blank');
+        }
+        function face(){
+            window.open('https://www.facebook.com/yahir.pedraza.7?notif_id', '_blank');
         }
     </script>
-<script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyC1xa3L3gc8O4RIYSdZqY71fL7lfUBQ4bo",
-      authDomain: "roberto-63806.firebaseapp.com",
-      projectId: "roberto-63806",
-      storageBucket: "roberto-63806.appspot.com",
-      messagingSenderId: "836784051274",
-      appId: "1:836784051274:web:ab3273cf6ba01e8d0d82b3",
-      measurementId: "G-GDJT4WTJTP"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
 </body>
 </html>
